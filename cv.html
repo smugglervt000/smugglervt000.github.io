@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Mélanie Roschewitz (née Bernhardt)</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+    <style>
+        /* Custom CSS */
+        body {
+            padding-top: 70px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .fixed-top-nav {
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .sidebar-nav {
+            position: fixed;
+            top: 70px;
+            width: 200px;
+            padding-top: 20px;
+        }
+        .content-area {
+            margin-left: 220px;
+        }
+        .card-title {
+            font-weight: bold;
+        }
+        .badge {
+            background-color: #d9534f;
+            color: white;
+        }
+        footer {
+            padding: 10px 0;
+            text-align: center;
+            background-color: #f8f9fa;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header and Navigation Bar -->
+    <nav class="navbar navbar-expand-sm fixed-top fixed-top-nav">
+        <div class="container">
+            <a class="navbar-brand font-weight-light" href="/">Mélanie Roschewitz (née Bernhardt)</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">About</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="/cv/">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/publications/">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/repositories/">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar-nav bg-light p-3">
+        <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#general-information">General Information</a></li>
+            <li class="nav-item"><a class="nav-link" href="#research-experience">Research Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#teaching-activities">Teaching Activities</a></li>
+            <li class="nav-item"><a class="nav-link" href="#outreach-community-activities">Outreach & Community Activities</a></li>
+            <li class="nav-item"><a class="nav-link" href="#scholarships">Scholarships</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="container content-area">
+        <h1 class="mt-3">CV</h1>
+
+        <!-- General Information Section -->
+        <div id="general-information" class="card mt-3">
+            <div class="card-body">
+                <h3 class="card-title">General Information</h3>
+                <table class="table table-borderless">
+                    <tr>
+                        <td><strong>Full Name</strong></td>
+                        <td>Mélanie Roschewitz</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Email</strong></td>
+                        <td>m.roschewitz21@imperial.ac.uk</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Languages</strong></td>
+                        <td>English, French, German</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Research Experience Section -->
+        <div id="research-experience" class="card mt-3">
+            <div class="card-body">
+                <h3 class="card-title">Research Experience</h3>
+                <div class="mb-3">
+                    <span class="badge">Oct 2021 - Now</span>
+                    <h5>PhD in Computing</h5>
+                    <p>Imperial College London, Department of Computing, UK</p>
+                    <ul>
+                        <li>Under the supervision of Prof. Dr. Ben Glocker.</li>
+                        <li>Fully funded by an Imperial College President's Scholarship.</li>
+                        <li>My research focuses on reliability, robustness and safety of AI systems for medical imaging.</li>
+                    </ul>
+                </div>
+                <!-- Add more research experiences similarly -->
+            </div>
+        </div>
+
+        <!-- Add more sections like Education, Teaching Activities, etc. -->
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © Copyright 2024 Mélanie Roschewitz (née Bernhardt)
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
