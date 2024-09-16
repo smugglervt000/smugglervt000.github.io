@@ -1,54 +1,66 @@
 /* styles.css */
+
+/* General Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333;
 }
 
-nav {
-    background-color: #333;
-    padding: 10px 0;
-    text-align: center;
+/* Header */
+header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+/* Section Styling */
+section {
+    padding: 40px 0;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
+/* About Section */
+#about h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
-.about, .cv, .publications {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+#about .lead {
+    font-size: 1.2rem;
+    color: #666;
 }
 
-img {
-    max-width: 200px;
+#about img {
+    max-width: 150px;
     border-radius: 50%;
 }
 
+/* News Section */
+#news h2 {
+    margin-top: 40px;
+}
+
+/* Contact Icons */
+.icon-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.icon-links a:hover {
+    color: #007bff;
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    background-color: #f8f9fa;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Sticky Navbar on Scroll */
+.navbar.fixed-top {
+    transition: background-color 0.3s;
 }
