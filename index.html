@@ -1,607 +1,198 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Dennis Ivy</title>
 
-  <!-- Standard Meta -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <!-- Site Properities -->
-  <title>Semantic-Org/Semantic-UI</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
 
-  <!-- Always Use Same -->
-  <link rel="stylesheet" type="text/css" href="css/ui/components/icon.css">
-  <link rel="stylesheet" type="text/css" href="css/ui/components/image.css">
-  <link rel="stylesheet" type="text/css" href="css/ui/components/transition.css">
-  <link rel="stylesheet" type="text/css" href="css/ui/components/default/checkbox.css">
-  <link rel="stylesheet" type="text/css" href="css/ui/components/github/sidebar.css">
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 
-  <!--
-    These css files are pre-compiled
-    to test out gulp
-    use static.html, run gulp from semantic/, and modify theme.config or variables
-  !-->
-  <link rel="stylesheet" rel="stylesheet" type="text/css" href="css/ui/components/github/form.css">
-  <link class="themable" rel="stylesheet" type="text/css" href="css/ui/components/github/reset.css">
-  <link class="themable" rel="stylesheet" type="text/css" href="css/ui/components/github/site.css">
-  <link class="themable" rel="stylesheet" type="text/css" href="css/ui/components/github/breadcrumb.css">
-  <link class="themable" rel="stylesheet" type="text/css" href="css/ui/components/github/button.css">
-  <link class="themable" rel="stylesheet" type="text/css" href="css/ui/components/github/container.css">
-  <link class="themable" rel="stylesheet" type="text/css" href="css/ui/components/github/divider.css">
-  <link class="themable" rel="stylesheet" type="text/css" href="css/ui/components/github/dropdown.css">
-  <link class="themable" rel="stylesheet" type="text/css" href="css/ui/components/github/grid.css">
-  <link class="themable" rel="stylesheet" type="text/css" href="css/ui/components/github/header.css">
-  <link class="themable" rel="stylesheet" type="text/css" href="css/ui/components/github/input.css">
-  <link class="themable" rel="stylesheet" type="text/css" href="css/ui/components/github/label.css">
-  <link class="themable" rel="stylesheet" type="text/css" href="css/ui/components/github/list.css">
-  <link class="themable" rel="stylesheet" type="text/css" href="css/ui/components/github/menu.css">
-  <link class="themable" rel="stylesheet" type="text/css" href="css/ui/components/github/message.css">
-  <link class="themable" rel="stylesheet" type="text/css" href="css/ui/components/github/popup.css">
-  <link class="themable" rel="stylesheet" type="text/css" href="css/ui/components/github/reveal.css">
-  <link class="themable" rel="stylesheet" type="text/css" href="css/ui/components/github/segment.css">
-  <link class="themable" rel="stylesheet" type="text/css" href="css/ui/components/github/table.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="css/global.css">
-  <link rel="stylesheet" type="text/css" href="css/layouts/theme.css">
-  <link rel="stylesheet" type="text/css" href="css/layouts/home.css">
-
+	<link rel="stylesheet" type="text/css" href="default.css">
+	<link id="theme-style" rel="stylesheet" type="text/css" href="">
 </head>
+<body>
 
-<body id="home" class="pushable">
-  <div class="ui theme left push sidebar">
-    <div class="ui form">
-      <h3 class="ui dividing header">Layout </h3>
-      <div class="field">
-        <div class="ui second checkbox">
-          <input type="checkbox"></input>
-          <label>Distinctive Buttons
-            <i class="tiny link question icon" data-content="Adds 'primary', 'labeled icon' and colored classes on a few buttons"></i>
-          </label>
-        </div>
-      </div>
-      <h3 class="ui dividing header">Theme</h3>
-      <div class="field">
-        <label>Global Theme</label>
-        <select class="ui theme dropdown" name="global">
-          <option value="default">Default</option>
-          <option value="amazon">Amazon</option>
-          <option value="github" selected>GitHub</option>
-          <option value="material" selected>Material</option>
-        </select>
-      </div>
-      <div class="field">
-        <label>Button</label>
-        <select class="ui theme dropdown" name="button">
-          <option value="default">Default</option>
-          <option value="amazon">Amazon</option>
-          <option value="chubby">Chubby</option>
-          <option value="github" selected>GitHub</option>
-          <option value="material">Material</option>
-          <option value="twitter">Twitter</option>
-        </select>
-      </div>
-      <div class="field">
-        <label>Menu</label>
-        <select class="ui theme dropdown" name="menu">
-          <option value="default">Default</option>
-          <option value="chubby">Chubby</option>
-          <option value="github" selected>GitHub</option>
-        </select>
-      </div>
-      <h3 class="ui header">About</h3>
-      <p>This example was created to demonstrate the theming and prototyping abilities of <a href="http://www.semantic-ui.com">Semantic UI</a>.</p>
-      <p>Layout examples above use simple class name swaps to show how working within an well-defined ui vocabulary allows for rapid prototyping without coding</p>
-      <a class="ui fluid labeled icon button" target="_blank" href="index-classic.html">
-        View Classic GitHub
-        <i class="github mark icon"></i>
-      </a>
-      <div class="ui divider"></div>
-      <a class="ui fluid labeled icon button" target="_blank" href="http://www.semantic-ui.com">
-        Visit Semantic-UI.com
-        <i class="external linkify icon"></i>
-      </a>
-      <a class="ui fluid primary labeled icon button" target="_blank" href="http://semantic-ui.com/usage/theming.html">
-        Explore theming
-        <i class="paintcan icon"></i>
-      </a>
-      <div class="ui horizontal divider"><i class="github mark icon"></i></div>
+	<section class="s1">
+		<div class="main-container">
+			<div class="greeting-wrapper">
+				<h1>Hi, I'm Dennis Ivanov</h1>
+			</div>
 
-      <iframe class="github" src="http://ghbtns.com/github-btn.html?user=semantic-org&amp;repo=example-github&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe>
-    </div>
-  </div>
-  <div class="pusher">
-    <!-- Global Header -->
-    <div class="page header">
-      <div class="ui container">
-        <div class="ui right floated icon text menu">
-          <a class="launch icon item" data-content="Select a theme">
-            <i class="disabled link paintcan icon"></i>
-          </a>
-          <a class="item" data-content="You have unread notification in this repository.">
-            <span class="ui empty mini floating circular blue notification label"></span>
-            <i class="bell icon"></i>
-          </a>
-          <div class="ui add top right pointing dropdown item" data-content="Create new...">
-            <i class="large plus icon"></i>
-            <i class="dropdown icon"></i>
-            <div class="menu">
-              <a class="item">New repository</a>
-              <a class="item">New organization</a>
-              <div class="divider"></div>
-              <div class="header">This organization</div>
-              <a class="item">Invite someone</a>
-              <a class="item">New team</a>
-              <a class="item">New repository</a>
-              <div class="divider"></div>
-              <div class="header">This repository</div>
-              <a class="item">New issue</a>
-              <a class="item">New collaborator</a>
-            </div>
-          </div>
-          <div class="user top right pointing ui dropdown item" data-content="View profile and more">
-            <img class="ui mini rounded image" src="images/avatar.jpg">
-            <i class="dropdown icon"></i>
-            <div class="menu">
-              <div class="user header">
-                Signed in as <b>jlukic</b>
-              </div>
-              <div class="divider"></div>
-              <a class="item">Your Profile</a>
-              <a class="item">Your Stars</a>
-              <a class="item">Explore</a>
-              <a class="item">Help</a>
-              <div class="divider"></div>
-              <a class="item">Settings</a>
-              <a class="item">Sign Out</a>
-            </div>
-          </div>
-        </div>
 
-        <div class="ui text menu">
-          <a class="icon item" href="http://www.github.com/semantic-org/semantic-ui/">
-            <i class="huge emphasized github mark icon"></i>
-          </a>
-          <div class="item">
-            <div class="ui small labeled input">
-              <div class="ui label">
-                This repository
-              </div>
-              <input type="text" placeholder="Search">
-            </div>
-            <a class="item">
-              <b>Pull requests</b>
-            </a>
-            <a class="item">
-              <b>Issues</b>
-            </a>
-            <a class="item">
-              <b>Gist</b>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="page content">
+			<div class="intro-wrapper">
+				<div class="nav-wrapper">
 
-      <!-- Repo Header -->
-      <div class="repo ribbon">
-        <div class="ui container">
-          <div class="repo options">
-            <div class="ui labeled button">
-              <div class="ui compact floating watch dropdown button" data-content="Quickly jump between files">
-                <input type="hidden" value="watching">
-                <i class="eye icon"></i> Unwatch
-                <i class="dropdown icon"></i>
-                <div class="menu">
-                  <!-- <div class="header">
-                    Notifications
-                    <i class="close icon"></i>
-                  </div> -->
-                  <div class="item" data-value="not-watching">
-                    <h4>Not Watching</h4>
-                    <span>Be notified when participating or @mentioned.</span>
-                  </div>
-                  <div class="item" data-value="watching">
-                    <h4>Watching</h4>
-                    <span>Be notified of all conversations.</span>
-                  </div>
-                  <div class="item" data-value="ignoring">
-                    <h4>Ignoring</h4>
-                    <span>Never be notified.</span>
-                  </div>
-                </div>
-              </div>
-              <a class="ui basic label">1,001</a>
-            </div>
-            <div class="ui labeled button">
-              <div class="ui compact button">
-                <i class="star icon"></i> Star
-              </div>
-              <a class="ui basic label">19,120</a>
-            </div>
-            <div class="ui labeled button">
-              <div class="ui compact button" data-content="Compare, review, create a pull request">
-                <i class="forked repo icon"></i> Fork
-              </div>
-              <a class="ui basic label">986</a>
-            </div>
-          </div>
-          <div class="ui big breadcrumb">
-            <i class="disabled repo icon"></i>
-            <a class="section">Semantic-Org</a>
-            <div class="divider"> / </div>
-            <a class="active section">Semantic UI</a>
-          </div>
-        </div>
+					<!-- Link around dots-wrapper added after tutorial video -->
+					<a href="index.html">
+						<div class="dots-wrapper">
+							<div id="dot-1" class="browser-dot"></div>
+							<div id="dot-2" class="browser-dot"></div>
+							<div id="dot-3" class="browser-dot"></div>
+						</div>
+					</a>
+					
 
-        <div class="ui tabular menu">
-          <div class="ui container">
-            <a class="active item">
-              <i class="code icon"></i>
-              Code
-            </a>
-            <a class="item">
-              <i class="issue opened icon"></i>
-              Issues
-              <span class="ui small label">593</span>
-            </a>
-            <a class="item">
-              <i class="git pull request icon"></i>
-              Pull Requests
-              <span class="ui small label">39</span>
-            </a>
-            <a class="item">
-              <i class="book icon"></i>
-              Wiki
-            </a>
-            <a class="item">
-              <i class="pulse icon"></i>
-              Pulse
-            </a>
-            <a class="item">
-              <i class="graph icon"></i>
-              Graphs
-            </a>
-            <a class="item">
-              <i class="gear icon"></i>
-              Settings
-            </a>
-          </div>
-        </div>
+					<ul id="navigation">
+						<li><a href="index.html#contact">Contact</a></li>
 
-      </div>
-    </div>
+					</ul>
+				</div>
 
-    <div class="ui container">
-      <!-- Repo Content -->
-      <div class="repo description">
-        Semantic is a UI component framework based around useful principles from natural language.
-        <a href="http://www.semantic-ui.com">http://www.semantic-ui.com</a>
-      </div>
-      <div class="ui four item top attached borderless stats menu">
-        <a class="item">
-          <i class="history icon"></i>
-          <b>5,227</b> commits
-        </a>
-        <a class="item">
-          <i class="git branch icon"></i>
-          <b>10</b> branches
-        </a>
-        <a class="item">
-          <i class="tag icon"></i>
-          <b>127</b> releases
-        </a>
-        <a class="item">
-          <i class="organization icon"></i>
-          <b>111</b> contributors
-        </a>
-      </div>
-      <div class="ui bottom attached horizontal language segments">
-        <div class="ui inverted yellow segment"></div>
-        <div class="ui inverted purple segment"></div>
-        <div class="ui inverted red segment"></div>
-      </div>
+				<div class="left-column">
+					<img id="profile_pic" src="images/Dennis.jpg">
+					<h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
 
-      <div class="repo title">
-        <div class="repo options">
-          <div class="ui compact buttons">
-            <div class="ui button">New File</div>
-            <div class="ui button">Find File</div>
-          </div>
-          <div class="ui right action input">
-            <div class="ui compact dropdown button">
-              SSH
-              <i class="dropdown icon"></i>
-            </div>
-            <input type="text" value="https://github.com/Semantic-Org/Semantic-UI">
-            <a class="ui icon button" data-content="Copy to clipboard">
-              <i class="clippy icon"></i>
-            </a>
-          </div>
-          <div class="ui compact icon button" data-content="Save to desktop.">
-            <i class="cloud download icon"></i>
-          </div>
-          <div class="ui compact button">
-            Download ZIP
-          </div>
-        </div>
-        <div class="ui dropdown branch compact button">
-          <div class="text">
-            Branch:
-            <b>master</b>
-          </div>
-          <i class="dropdown icon"></i>
-        </div>
-        <div class="ui positive compact icon button">
-          New pull request
-        </div>
-      </div>
+					<div id="theme-options-wrapper">
+						<div data-mode="light" id="light-mode" class="theme-dot"></div>
+						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+						<div data-mode="green" id="green-mode" class="theme-dot"></div>
+						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+					</div>
 
-      <div class="ui top attached recent info message">
-        <div class="commit">
-          <i class="blue clippy link icon"></i>
-          <a class="sha">
-            latest commit <b>3d002c72a0</b>
-          </a>
-        </div>
-        <img class="ui mini right spaced rounded image" src="images/avatar.jpg">
-        <a href="#"><b>jlukic</b></a>
-        Merge pull request <a href="#">#2728</a> from sunseth/patch-1
-      </div>
-      <table class="ui bottom attached files single line unstackable selectable table">
-        <tbody>
-          <tr>
-            <td class="single line five wide">
-              <i class="blue file directory icon"></i>
-              <a href="#">
-                dist
-              </a>
-            </td>
-            <td>Build 2.0.7</td>
-            <td class="right aligned collapsing">5 days ago</td>
-          </tr>
-          <tr>
-            <td>
-              <i class="blue file directory icon"></i>
-              <a href="#">
-                examples
-              </a>
-            </td>
-            <td>Update homepage.html</td>
-            <td class="right aligned">5 days ago</td>
-          </tr>
-          <tr>
-            <td>
-              <i class="blue file directory icon"></i>
-              <a href="#">
-                src
-              </a>
-            </td>
-            <td>Clean up logic in onComplete</td>
-            <td class="right aligned">5 days ago</td>
-          </tr>
-          <tr>
-            <td>
-              <i class="blue file directory icon"></i>
-              <a href="#">
-                docs
-              </a>
-            </td>
-            <td>Initial commit</td>
-            <td class="right aligned">5 days ago</td>
-          </tr>
-          <tr>
-            <td>
-              <i class="blue file directory icon"></i>
-              <a href="#">
-                tasks
-              </a>
-            </td>
-            <td>Updated browser prefix config</td>
-            <td class="right aligned">5 days ago</td>
-          </tr>
-          <tr>
-            <td>
-              <i class="blue file directory icon"></i>
-              <a href="#">
-                test
-              </a>
-            </td>
-            <td> Restructure test/ for meteor #1607 </td>
-            <td class="right aligned">10 months ago</td>
-          </tr>
-          <tr>
-            <td>
-              <i class="grey text file icon"></i>
-              <a href="#">
-                .csscomb.json
-              </a>
-            </td>
-            <td>Iteration on regex for comment replacement</td>
-            <td class="right aligned">10 months ago</td>
-          </tr>
-          <tr>
-            <td>
-              <i class="grey text file icon"></i>
-              <a href="#">
-                .csslintrc
-              </a>
-            </td>
-            <td>Add csslintrc</td>
-            <td class="right aligned">5 months ago</td>
-          </tr>
-          <tr>
-            <td>
-              <i class="grey text file icon"></i>
-              <a href="#">
-                CONTRIBUTING.md
-              </a>
-            </td>
-            <td>Update CONTRIBUTING.md</td>
-            <td class="right aligned">8 months ago</td>
-          </tr>
-          <tr>
-            <td>
-              <i class="grey text file icon"></i>
-              <a href="#">
-                LICENSE.md
-              </a>
-            </td>
-            <td>Remove execute permission</td>
-            <td class="right aligned">7 days ago</td>
-          </tr>
-          <tr>
-            <td>
-              <i class="grey text file icon"></i>
-              <a href="#">
-                README.md
-              </a>
-            </td>
-            <td>Update README.md</td>
-            <td class="right aligned">7 days ago</td>
-          </tr>
-          <tr>
-            <td>
-              <i class="grey text file icon"></i>
-              <a href="#">
-                RELEASE-NOTES.md
-              </a>
-            </td>
-            <td>Fix date</td>
-            <td class="right aligned">7 days ago</td>
-          </tr>
-          <tr>
-            <td>
-              <i class="grey text file icon"></i>
-              <a href="#">
-                bower.json
-              </a>
-            </td>
-            <td>main: semantic.css => semantic.less</td>
-            <td class="right aligned">3 months ago</td>
-          </tr>
-          <tr>
-            <td>
-              <i class="grey text file icon"></i>
-              <a href="#">
-                composer.json
-              </a>
-            </td>
-            <td>#1853 Fix some composer.json fields</td>
-            <td class="right aligned">5 months ago</td>
-          </tr>
-          <tr>
-            <td>
-              <i class="grey text file icon"></i>
-              <a href="#">
-                gulpfile.js
-              </a>
-            </td>
-            <td>Update gulpfile</td>
-            <td class="right aligned">4 months ago</td>
-          </tr>
-          <tr>
-            <td>
-              <i class="grey text file icon"></i>
-              <a href="#">
-                karma.conf.js
-              </a>
-            </td>
-            <td>Remove execute permission.</td>
-            <td class="right aligned">8 months ago</td>
-          </tr>
-          <tr>
-            <td>
-              <i class="grey text file icon"></i>
-              <a href="#">
-                logo.png
-              </a>
-            </td>
-            <td>Remove execute permission.</td>
-            <td class="right aligned">8 months ago</td>
-          </tr>
-          <tr>
-            <td>
-              <i class="grey text file icon"></i>
-              <a href="#">
-                package.json
-              </a>
-            </td>
-            <td>Build 2.0.7</td>
-            <td class="right aligned">5 days ago</td>
-          </tr>
-          <tr>
-            <td>
-              <i class="grey text file icon"></i>
-              <a href="#">
-                semantic.json.example
-              </a>
-            </td>
-            <td>Fix admin flag set in example json! #2453</td>
-            <td class="right aligned">28 days ago</td>
-          </tr>
-        </tbody>
-      </table>
+					<p id="settings-note">*Theme settings will be saved for<br>your next vist</p>
+				</div>
 
-      <div class="ui segments">
-        <h4 class="ui top attached block header">
-          <i class="book icon"></i>
-          README.md
-        </h4>
-        <div class="ui readme padded segment">
+				<div class="right-column">
 
-          <img src="https://camo.githubusercontent.com/fd37a36efc5d224a678609ae94405139399e0fd3/687474703a2f2f7777772e73656d616e7469632d75692e636f6d2f696d616765732f6c6f676f2e706e67">
+					<div id="preview-shadow">
+						<div id="preview">
+							<div id="corner-tl" class="corner"></div>
+							<div id="corner-tr" class="corner"></div>
+							<h3>What I Do</h3>
+							<p>I was a lead developer in a past life, now I enjoy teaching courses.</p>
+							<div id="corner-br" class="corner"></div>
+							<div id="corner-bl" class="corner"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-          <h1>Semantic UI</h1>
+	<section class="s2">
+		<div class="main-container">
 
-          <p><a href="https://gitter.im/Semantic-Org/Semantic-UI?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img style="max-width:100%;" data-canonical-src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/Semantic-Org/Semantic-UI" src="https://camo.githubusercontent.com/da2edb525cde1455a622c58c0effc3a90b9a181c/68747470733a2f2f6261646765732e6769747465722e696d2f4a6f696e253230436861742e737667"></a></p>
+			<div class="about-wrapper">
+				<div class="about-me">
+					<h4>More about me</h4>
 
-          <p>Semantic is a UI framework designed for theming.</p>
+					<p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
 
-          <p>Key Features</p>
+					<p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that interest me.</p>
 
-          <ul class="ui bulleted list">
-            <li>50+ UI elements</li>
-            <li>3000 + CSS variables</li>
-            <li>3 Levels of variable inheritance (similar to SublimeText)</li>
-            <li>Built with EM values for responsive design</li>
-            <li>Flexbox friendly</li>
-          </ul>
 
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="ui container">
-        <div class="ui section divider"></div>
-        <div class="ui small right floated horizontal list">
-          <a class="item" href="#">Status</a>
-          <a class="item" href="#">API</a>
-          <a class="item" href="#">Training</a>
-          <a class="item" href="#">Shop</a>
-          <a class="item" href="#">Blog</a>
-          <a class="item" href="#">About</a>
-          <a class="item" href="#">Pricing</a>
-        </div>
-        <i class="large github mark icon"></i>
-        <div class="ui small horizontal list">
-          <div class="disabled item" href="#">&copy; 2016 GitHub, Inc.</div>
-          <a class="item" href="#">Terms</a>
-          <a class="item" href="#">Privacy</a>
-          <a class="item" href="#">Security</a>
-          <a class="item" href="#">Contact</a>
-          <a class="item" href="#">Help</a>
-        </div>
-      </div>
-    </div>
-  </div>
+					<hr>
 
-  <!-- JS Includes -->
-  <script src="javascript/library/jquery.min.js"></script>
-  <script src="css/ui/semantic.min.js"></script>
-  <script src="javascript/home.js"></script>
-  <script src="javascript/theme.js"></script>
+					<h4>TOP EXPERTISE</h4>
+
+					<p>Fullstack developer with primary focus on Django + React: <a target="_blank" href="resume.pdf">Download Resume</a></p>
+
+					<div id="skills">
+						<ul>
+							<li>Python</li>
+							<li>Django</li>
+							<li>JavaScript</li>
+							<li>React</li>
+							<li>Postgres</li>
+						</ul>
+
+						<ul>
+							<li>Google Maps API</li>
+							<li>JS Charts</li>
+							<li>AWS (RDS/S3)</li>
+							<li>Heroku</li>
+							<li>HTML/CSS</li>
+						</ul>
+
+					</div>
+
+				</div>
+
+				
+				<div class="social-links">
+					<img id="social_img" src="images/follow.jpg">
+					<h3>Find me on Twitter & Youtube</h3>
+
+					<a target="_blank" href="https://www.youtube.com/c/dennisivy">YouTube: @DennisIvy</a>
+					<br>
+					<a target="_blank" href="https://twitter.com/dennisivy11">Twitter: @DennisIvy11</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="s1">
+		<div class="main-container">
+			<h3 style="text-align: center;">Some of my past projects</h3>
+
+			<div class="post-wrapper">
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/dash.jpg">
+						<div class="post-preview">
+							<h6 class="post-title">Laboratory Management System</h6>
+							<p class="post-intro">Designed built & mantained a the lab managment system for FOI Laboratories</p>
+							<a href="post.html">Read More</a>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/ecom.jpg">
+						<div class="post-preview">
+							<h6 class="post-title">Online Store - CoursePost Title</h6>
+							<p class="post-intro">Online store with paypal payments intergration and guest user shopping</p>
+							<a href="post.html">Read More</a>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/membership site.jpg">
+						<div class="post-preview">
+							<h6 class="post-title">Membership Website</h6>
+							<p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
+							<a href="post.html">Read More</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="s2">
+		<div class="main-container">
+			<a href=""></a>
+			<h3 style="text-align: center;">Get In Touch</h3>
+
+			<form id="contact-form">
+				<a name="contact"></a>
+
+				<label>Name</label>
+				<input class="input-field" type="text" name="name">
+
+				<label>Subject</label>
+				<input class="input-field" type="text" name="subject">
+
+				<label>Email</label>
+				<input class="input-field" type="text" name="email">
+
+				<label>Message</label>
+				<textarea class="input-field" name="message"></textarea>
+
+				<input id="submit-btn" type="submit" value="Send">
+			</form>
+		</div>
+	</section> 
+
+	<script type="text/javascript" src="script.js"></script>
 </body>
-
 </html>
