@@ -23,6 +23,14 @@ section {
 }
 
 /* About Section */
+#about {
+    text-align: left; /* Ensure all text in the about section is aligned to the left */
+}
+
+#about .container {
+    max-width: 800px; /* Set a maximum width for balanced white space on the sides */
+}
+
 #about h1 {
     font-size: 2.5rem;
     font-weight: bold;
@@ -36,6 +44,17 @@ section {
 #about img {
     max-width: 150px;
     border-radius: 50%;
+}
+
+/* Responsive alignment */
+#about .col-md-4 {
+    text-align: right; /* Align the image container to the right */
+}
+
+@media (max-width: 768px) {
+    #about .col-md-4 {
+        text-align: center; /* Center align image on smaller screens */
+    }
 }
 
 /* News Section */
