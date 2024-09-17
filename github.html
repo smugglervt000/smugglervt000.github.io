@@ -5,14 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub | Matthew Murphy</title>
     <!-- Bootstrap CSS -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- Custom CSS -->
-    <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
     <style>
         /* Custom CSS */
         body {
@@ -23,23 +18,19 @@
             background-color: #f8f9fa;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .sidebar-nav {
-            position: fixed;
-            top: 70px;
-            width: 200px;
-            padding-top: 20px;
-        }
         .content-area {
-            margin-left: 220px;
+            margin-top: 50px;
         }
-        .card-title {
-            font-weight: bold;
+        .card {
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .badge {
-            background-color: #d9534f;
-            color: white;
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
-        footer {
+        .footer {
             padding: 10px 0;
             text-align: center;
             background-color: #f8f9fa;
@@ -61,8 +52,8 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="/">About</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="cv.html">CV</a></li>
-                        <li class="nav-item"><a class="nav-link" href="github.html">GitHub</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="github.html">GitHub</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html">Contact</a></li>
                     </ul>
                 </div>
@@ -70,32 +61,64 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main class="container mt-5 pt-5">
-
-        <!-- About Section -->
-        <section id="about" class="my-5">
-            <div class="container" style="max-width: 1000px;"> <!-- Increased max-width for more space -->
-                <div class="row align-items-center">
-                    <!-- Left Column (Text) -->
-                    <div class="col-md-8">
-                        <h1 class="display-4">GitHub</h1>
-                        <p class="lead">GitHub repositories for Research Projects</p>
+    <!-- Main Content Area -->
+    <main class="container content-area">
+        <h1 class="display-4">GitHub</h1>
+        <p class="lead">A selection of GitHub repositories for research projects.</p>
+        
+        <!-- GitHub Repositories Section -->
+        <div class="row">
+            <!-- Example Repository Card -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="https://github.com/smugglervt000/Mammography-Object-Detection" target="_blank">Object Detection for Breast Cancer Screenings</a></h5>
+                        <p class="card-text">Brief description of the repository, its purpose, and key features.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="badge badge-primary">Python</span>
+                            </div>
+                            <div>
+                                <i class="fas fa-star"></i> 5
+                                <i class="fas fa-code-branch ml-2"></i> 3
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <!-- Additional Repository Cards -->
+            <!-- Copy this block for each repository -->
+            <!--<div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="https://github.com/yourusername/repo2" target="_blank">Repository Name 2</a></h5>
+                        <p class="card-text">Brief description of the repository, its purpose, and key features.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="badge badge-warning">Python</span>
+                            </div>
+                            <div>
+                                <i class="fas fa-star"></i> 10
+                                <i class="fas fa-code-branch ml-2"></i> 4
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Repeat for more repositories -->
+
+        </div>
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         © Copyright 2024 Matthew Murphy. Last updated: September 17, 2024.
     </footer>
 
     <!-- Bootstrap and jQuery Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="assets/js/common.js"></script>
 </body>
 </html>
