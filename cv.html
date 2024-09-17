@@ -51,13 +51,19 @@
             background-color: #007bff; 
             color: white;
         }
+        /* Adjust the footer and bottom space */
         footer {
             padding: 10px 0;
             text-align: center;
             background-color: #f8f9fa;
-            position: fixed;
+            position: relative; /* Changed from fixed to relative */
             width: 100%;
             bottom: 0;
+            margin-top: 30px; /* Add space above the footer */
+        }
+        /* Add margin-bottom to the last section */
+        .content-area {
+            margin-bottom: 30px; /* Add space at the bottom */
         }
     </style>
 </head>
@@ -129,7 +135,6 @@
             </div>
         </div>
 
-
         <!-- Research Experience Section -->
         <div id="research-experience" class="card mt-3">
             <div class="card-body">
@@ -165,7 +170,7 @@
         </div>
 
         <!-- Technical Skills Section -->
-        <div id="technical-skills" class="card mt-3">
+        <div id="technical-skills" class="card mt-3 mb-3"> <!-- Added mb-3 for margin-bottom -->
             <div class="card-body">
                 <h3 class="card-title">Technical Skills</h3>
                 
@@ -206,8 +211,6 @@
                 </div>
             </div>
         </div>
-
-        
     </div>
         
     <!-- Footer -->
