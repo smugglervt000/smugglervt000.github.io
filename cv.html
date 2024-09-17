@@ -25,6 +25,25 @@
         .content-area {
             margin-left: 220px;
         }
+        /* Add shadows to cards for depth */
+        .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            border-radius: 10px; /* Rounded corners */
+        }
+        
+        /* Add a border between items within cards */
+        .card-body .item {
+            border-top: 1px solid #e0e0e0; /* Light gray border */
+            padding-top: 15px;
+            margin-top: 15px;
+        }
+        
+        /* Remove border for the first item */
+        .card-body .item:first-child {
+            border-top: none;
+            padding-top: 0;
+            margin-top: 0;
+        }
         .card-title {
             font-weight: bold;
         }
@@ -97,12 +116,12 @@
         <div id="education" class="card mt-3">
             <div class="card-body">
                 <h3 class="card-title">Education</h3>
-                <div class="mb-3">
+                <div class="item mb-3">
                     <span class="badge">2023 - 2024</span>
                     <h5>M.Sc Artificial Intelligence</h5>
                     <p>Imperial College London, Department of Computing, UK</p>
                 </div>
-                <div class="mb-3">
+                <div class="item mb-3">
                     <span class="badge">2018 - 2023</span>
                     <h5>B.Sc Physics</h5>
                     <p>Yale University</p>
@@ -110,17 +129,18 @@
             </div>
         </div>
 
+
         <!-- Research Experience Section -->
         <div id="research-experience" class="card mt-3">
             <div class="card-body">
                 <h3 class="card-title">Research Experience</h3>
-                <div class="mb-3">
+                <div class="item mb-3">
                     <span class="badge">2024</span>
                     <h5>Deep Learning for Breast Cancer Screening</h5>
                     <p>Developed RetinaNet and Faster R-CNN detection models to localize and categorize potentially cancerous lesions in mammography scans
                        Managed and processed large-scale mammography datasets, optimizing data pipelines for efficient handling and ensuring high-quality input for machine learning models</p>
                 </div>
-                <div class="mb-3">
+                <div class="item mb-3">
                     <span class="badge">2024</span>
                     <h5>AI-Powered PDF to Video Converter</h5>
                     <p>Developed pipeline to transform PDF documents into dynamic, engaging video content by leveraging LLMs, text to image models, and text to speech models to automate the conversion process</p>
