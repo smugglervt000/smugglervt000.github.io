@@ -29,7 +29,7 @@
             font-weight: bold;
         }
         .badge {
-            background-color: #d9534f;
+            background-color: #f8f9fa; 
             color: white;
         }
         footer {
@@ -44,6 +44,7 @@
 </head>
 <body>
 
+    <!-- badge color #d9534f; -->
     <!-- Header and Navigation Bar -->
     <nav class="navbar navbar-expand-sm fixed-top fixed-top-nav">
         <div class="container">
@@ -66,9 +67,9 @@
     <div class="sidebar-nav bg-light p-3">
         <ul class="nav flex-column">
             <li class="nav-item"><a class="nav-link" href="#general-information">General Information</a></li>
-            <li class="nav-item"><a class="nav-link" href="#research-experience">Education</a></li>
-            <li class="nav-item"><a class="nav-link" href="#teaching-activities">Technical Skills</a></li>
-            <li class="nav-item"><a class="nav-link" href="#education">Research Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#research-experience">Research Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#technical-skills">Technical Skills</a></li>
         </ul>
     </div>
 
@@ -93,7 +94,7 @@
             </div>
         </div>
 
-        <!-- Research Experience Section -->
+        <!-- Education Section -->
         <div id="education" class="card mt-3">
             <div class="card-body">
                 <h3 class="card-title">Education</h3>
@@ -109,7 +110,22 @@
             </div>
         </div>
 
-        <!-- Add more sections like Education, Teaching Activities, etc. -->
+        <!-- Research Experience Section -->
+        <div id="research-experience" class="card mt-3">
+            <div class="card-body">
+                <h3 class="card-title">Research Experience</h3>
+                <div class="mb-3">
+                    <span class="badge">2024</span>
+                    <h5>Deep Learning for Breast Cancer Screening</h5>
+                    <p>Developed RetinaNet and Faster R-CNN detection models to localize and categorize potentially cancerous lesions in mammography scans
+                       Managed and processed large-scale mammography datasets, optimizing data pipelines for efficient handling and ensuring high-quality input for machine learning models</p>
+                </div>
+                <div class="mb-3">
+                    <span class="badge">2024</span>
+                    <h5>AI-Powered PDF to Video Converter</h5>
+                    <p>Developed pipeline to transform PDF documents into dynamic, engaging video content by leveraging LLMs, text to image models, and text to speech models to automate the conversion process</p>
+            </div>
+        </div>
 
     </div>
         
